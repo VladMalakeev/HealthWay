@@ -1,0 +1,91 @@
+#header{
+
+    padding: 5px 15px;
+    background: url("../images/white-scratone.png");
+    box-shadow: 0 0px 4px -1px black;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 30px);
+    z-index: 10;
+    min-height: 40px;
+}
+.linksWrap{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+#header a{
+    color: #686767;
+    text-decoration: none;
+    transition: 500ms;
+    padding: 5px 10px;
+}
+#header a:hover{
+    color: #272727;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.headerLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.openDrawer img{
+    width: 40px;
+}
+
+.openDrawer{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+}
+
+.linksMobileWrap{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0 10%;
+}
+
+.headerMobileLink{
+    display: flex;
+    align-items: center;
+}
+.headerMobileLink img{
+    margin-right: 15px;
+}
+.headerMobileLink span{
+    font-size: 1.2rem;
+    color: #000000b3;
+}
+.headerMobileLink:hover{
+    cursor: pointer;
+    color: black;
+    text-decoration: underline;
+}
+
+@media (max-width: 350px) {
+    .menu{
+        width: 80%;
+    }
+    [data-drawer-backdrop]:before{
+        margin-left: calc(var(--tdm-drawer-width) - 1.5rem)!important;
+    }
+}
+
+
+
+@media(max-width: 1050px) {
+    .linksWrap{
+        display: none;
+    }
+    .openDrawer{
+        display: flex;
+    }
+}

@@ -1,0 +1,138 @@
+#feed{
+    background: url("../images/photo8.jpg");
+    height: 90vh;
+    background-size: cover;
+    box-shadow: 0 0 6px #00000061;
+    background-position-x: center;
+}
+.feedWrap{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.freeDescription{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.linkBlock{
+    margin: 25px;
+    background: rgba(255, 255, 255, 0.49);
+    width: 80vw;
+    padding: 15px;
+}
+
+.linkWhiteBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 6px #00000063
+}
+
+.socLink{
+    width: 30%;
+    border: 1px solid rgba(95, 94, 94, 0.38);
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 2px 2px 8px #000000ad;
+    text-decoration: none;
+    transition: 500ms;
+}
+.socLink:hover{
+    text-decoration: none;
+}
+
+.socLink img{
+    width: 40px;
+    height: 40px;
+}
+#gmailText{
+    font-size: 1rem;
+}
+.socLink span{
+    font-family: 'Marmelad', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 10px;
+    width: 80%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+#telegram{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #0f7ae5;
+    padding: 5px;
+}
+
+.feedHeader{
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.61);
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+
+.feedBackBlock{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.viber{
+     background: rgba(125, 61, 175, 0.87);
+    transition: 500ms;
+ }
+.viber:hover{
+    background: #7D3DAF;
+}
+.telegram{
+    background: rgba(97, 168, 222, 0.86);
+    transition: 500ms;
+}
+.telegram:hover{
+    background: #269ede;
+}
+.instagram{
+    transition: 500ms;
+    background: linear-gradient(45deg, #fae003ad , #ff5160d6 , #b92ba4e3,#751ccbe0 );
+}
+.instagram:hover{
+    background: linear-gradient(45deg, rgba(250, 224, 3, 0.99), #ff5160, #b92ba4, #751ccb);;
+}
+
+@media (min-width: 0px) and (max-width: 600px){
+    .socLink{
+        width: auto;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px){
+    .socLink{
+        width: 60%;
+        margin: 15px auto;
+    }
+}
+@media (max-width: 900px) {
+    .feedBackBlock{
+        flex-direction: column;
+    }
+    .linkBlock{
+        margin-bottom: -250px;
+    }
+}

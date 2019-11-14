@@ -1,0 +1,299 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.paymentWrap{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.paymentBlock{
+    width: 70vw;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+    background: #eeecec75;
+    box-shadow: 10px 11px 14px #44444440;
+}
+
+.paymentHeader{
+    width: 100%;
+    background: #ffffffc7;
+    border: 1px solid #00000029;
+    border-radius: 5px;
+    box-shadow: 4px 5px 6px #00000030;
+}
+.paymentHeader p{
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 5px 0;
+    color: #e81212;
+    font-family: 'Marmelad', sans-serif;
+    text-decoration: underline;
+}
+
+.paymentTextWrap{
+    border: 1px solid #00000029;
+    width: 100%;
+    margin: 20px 0;
+    background: #ffffffc7;
+    box-shadow: 4px 5px 6px #00000030;
+    border-radius: 5px;
+}
+.paymentTextInfo {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 15px;
+    font-family: 'Marmelad', sans-serif;
+    color: #000000bd;
+    font-style: italic;
+}
+
+.paymentTextLast{
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 15px;
+    font-family: 'Marmelad', sans-serif;
+    color: #000000c4;
+    font-style: italic;
+}
+
+.paymentLinks{
+    border: 1px solid #00000024;
+    width: 100%;
+    height: 35%;
+    background: #ffffffc7;
+    box-shadow: 6px 7px 6px #0000001f;
+    border-radius: 5px;
+}
+
+.linkHeader{
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Marmelad', sans-serif;
+    color: #585757;
+    text-decoration: underline;
+}
+
+.linkWrap{
+    display: flex;
+    flex-direction: row;
+}
+
+.footerImage{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../images/tree.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    z-index: -1;
+}
+.topImage{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    background-image: url(../images/tree2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: left;
+    z-index: -1;
+}
+
+.socLink{
+    width: 30%;
+    border: 1px solid rgba(95, 94, 94, 0.38);
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 2px 2px 8px #000000ad;
+    text-decoration: none;
+    transition: 500ms;
+}
+.socLink:hover{
+    text-decoration: none;
+}
+
+.socLink img{
+    width: 40px;
+    height: 40px;
+}
+
+.socLink span{
+    font-family: 'Marmelad', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 10px;
+    width: 80%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+.viber{
+    background: rgba(125, 61, 175, 0.87);
+    transition: 500ms;
+}
+.viber:hover{
+    background: #7D3DAF;
+}
+.telegram{
+    background: rgba(97, 168, 222, 0.86);
+    transition: 500ms;
+}
+.telegram:hover{
+    background: #269ede;
+}
+.instagram{
+    transition: 500ms;
+    background: linear-gradient(45deg, #fae003ad , #ff5160d6 , #b92ba4e3,#751ccbe0 );
+}
+.instagram:hover{
+    background: linear-gradient(45deg, rgba(250, 224, 3, 0.99), #ff5160, #b92ba4, #751ccb);;
+}
+
+@media (max-height: 900px) {
+    .topImage{
+        height: 40vh;
+    }
+    .footerImage{
+        height: 50vh;
+    }
+}
+@media (min-width: 0px) and (max-width: 550px) {
+    .socLink {
+        width: calc(100% - 90px);
+    }
+    .paymentTextLast{
+        text-align: center;
+    }
+    .paymentHeader p{
+        font-size: 1.4rem;
+        width: calc(100% - 10px);
+        margin: 5px;
+    }
+    .paymentTextInfo{
+        font-size: 1.1rem;
+    }
+    .paymentTextLast{
+        font-size: 1.1rem;
+    }
+    .linkHeader{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 550px) {
+    .socLink {
+        width: calc(100% - 90px);
+    }
+    .paymentTextLast{
+        text-align: center;
+    }
+    .paymentHeader p{
+        font-size: 1.5rem;
+        width: calc(100% - 10px);
+        margin: 5px;
+    }
+    .paymentTextInfo{
+        font-size: 1.2rem;
+    }
+    .paymentTextLast{
+        font-size: 1.2rem;
+    }
+    .linkHeader{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 700px) {
+    .topImage{
+        height: 30vh;
+    }
+    .paymentHeader p{
+        font-size: 1.6rem;
+    }
+    .paymentTextInfo{
+        font-size: 1.3rem;
+    }
+    .paymentTextLast{
+        font-size: 1.3rem;
+    }
+    .linkHeader{
+             font-size: 1.7rem;
+         }
+    .socLink {
+        width: calc(100% - 90px);
+    }
+    .paymentTextLast{
+        text-align: center;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1020px){
+    .topImage{
+        height: 30vh;
+    }
+    .socLink{
+        width: 40%;
+    }
+    .paymentHeader p{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1500px) and (min-height: 1020px){
+    .paymentTextInfo{
+        font-size: 2rem;
+    }
+    .paymentTextLast{
+        font-size: 2rem;
+    }
+    .linkHeader{
+        font-size: 3rem;
+    }
+}
+@media (min-width: 1800px) and (min-height: 1100px){
+    .paymentTextInfo{
+        font-size: 2.2rem;
+    }
+    .paymentTextLast{
+        font-size: 2.2rem;
+    }
+    .linkHeader{
+        font-size: 3rem;
+    }
+    .socLink span{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 1021px){
+    .linkWrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    .paymentLinks{
+        height: auto;
+    }
+    .paymentBlock{
+        height: auto;
+        margin: 20px;
+    }
+}

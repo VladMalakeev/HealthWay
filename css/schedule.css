@@ -1,0 +1,124 @@
+#schedule{
+    padding:0 10%;
+    background: rgba(255, 255, 255, 0.29);
+}
+
+
+.scheduleWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.courseBlock{
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    border-radius: 5px;
+    background: white;
+}
+
+.lesson{
+    text-align: left;
+    margin: 0;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-family: 'Marmelad', sans-serif;
+    color: #4b4b4b;
+}
+
+
+.lessonTextWrap:nth-child(even){
+    background: #eff0f1;
+}
+
+.theme{
+    font-size: 1.1rem;
+    font-family: 'Marmelad', sans-serif;
+    color: #4b4b4b;
+    text-align: center;
+    margin: 0;
+    padding: 12px;
+}
+
+.theme:nth-child(even){
+    background: #eff0f1;
+}
+
+.course{
+    font-family: 'Marmelad', sans-serif;
+    color: #343434;
+    border-bottom:1px solid rgba(0, 0, 0, 0.31);
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+ }
+
+.themeWrap1{
+     display: flex;
+     flex-direction: row;
+     border-bottom:1px solid rgba(0, 0, 0, 0.31);
+ }
+.themeWrap2{
+    display: flex;
+    flex-direction: row;
+}
+.courseHeader{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.courseContent{
+    background: rgba(255, 255, 255, 0.56);
+    width: 80%;
+}
+
+.lessonName{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.lessonBlock{
+    width: 100%;
+    border-right:1px solid rgba(0, 0, 0, 0.31);
+}
+
+.uk-accordion>:nth-child(n+2) {
+    margin-top: 0px;
+}
+.uk-accordion-content {
+    margin-top: 0px;
+}
+
+.lessonTextWrap{
+    display: flex;
+}
+
+.lessonTextImage{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lessonTextImage img{
+    width: 30px;
+    height: 30px;
+}
+
+.lessonText{
+    width: 90%;
+}
+
+@media (min-width: 0px) and (max-width: 600px){
+    #schedule{
+        padding:0 3%;
+    }
+    .lessonTextImage{
+        width: 20%;
+    }
+    .lessonText{
+        width: 80%;
+    }
+}

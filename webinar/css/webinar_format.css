@@ -1,0 +1,48 @@
+.formatWrap{
+    width: 100%;
+}
+
+.webinarHeader{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Marmelad', sans-serif;
+    color: #545454;
+}
+
+.webinarHeaderWrap{
+    margin-top: 30px;
+    position: relative;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.webinarHeaderElement{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    transform: rotate(45deg);
+    background: #f9f0cd;
+    margin-left: calc(50vw - 40px);
+    margin-top: 40px;
+    box-shadow: 4px 4px 3px -4px;
+}
+
+.webinarImage{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 -1px 5px -2px black;
+}
+
+@media(min-width: 400px) and (max-width: 499px){
+    .webinarImage{
+        min-height: 250px;
+    }
+}
+@media(min-width: 300px) and (max-width: 399px){
+    .webinarImage{
+        min-height: 220px;
+    }
+}

@@ -1,0 +1,301 @@
+#price{
+    padding: 5% 10%;
+    background: white;
+}
+
+.priceBlock{
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.courseContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30vw;
+    height: 500px;
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 7px #0000003b;
+    border: 1px solid #00000026;
+    transition: 500ms;
+    background-image: url("../images/white-scratone.png");
+    transition: 500ms;
+}
+.courseContainer:hover{
+    box-shadow: 0px 0px 20px 7px #8bc34a63;
+}
+
+.course1Image{
+     height: 210px;
+     background-size: cover;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     box-shadow: 0 0 7px #0000003b;
+     display: flex;
+     align-items: flex-end;
+    position: relative;
+ }
+.course2Image{
+    height: 210px;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 7px #0000003b;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.courseName{
+    background: #ddddddad;
+    margin: 0;
+    text-align: left;
+    font-size: 2rem;
+    width: calc(100% - 20px);
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 12px #000000eb;
+    padding: 5px 10px;
+    border-bottom: 2px solid white;
+    position: absolute;
+}
+
+.priseDescription{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.discountPrice{
+    color: red;
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+.priceButton{
+    padding: 10px;
+    width: calc(100% - 50px);
+    text-align: center;
+    color: white;
+    background: #76c401;
+    border: none;
+    border-radius: 5px;
+    transition: 500ms;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.priceButton:hover{
+    color: white;
+}
+.priceButton:focus{
+    outline: none;
+}
+
+.priceButton:hover{
+    background: orange;
+    cursor: pointer;
+}
+
+.discountDescription{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background: #fb5a5a;
+    padding: 5px;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 4px -1px #00000059;
+}
+.discountText{
+    font-size: 2.2rem;
+    color: #ff6258;
+    text-align: center;
+    margin: 15px;
+}
+
+.hoverImgWrap{
+    height: 100%;
+}
+
+.marketingBlock{
+    position: relative;
+}
+
+.firstLine{
+    width: 250px;
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 3px;
+    background: red;
+    transform: rotate(15deg);
+    position: absolute;
+}
+
+.secondLine{
+    position: absolute;
+    width: 250px;
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 3px;
+    background: red;
+    transform: rotate(-15deg);
+}
+
+@media (min-width:0px ) and (max-width: 400px){
+    #price {
+        padding: 5% 3%;
+    }
+    .course1Image{
+        height: 190px;
+    }
+    .course2Image{
+        height: 190px;
+    }
+}
+@media (min-width:401px ) and (max-width: 500px){
+    #price {
+        padding: 5% 3%;
+    }
+    .course1Image{
+        height: 190px;
+    }
+    .course2Image{
+        height: 190px;
+    }
+}
+
+@media (min-width:501px ) and (max-width: 650px){
+    #price {
+        padding: 5% 20%;
+    }
+    .course1Image{
+        height: 190px;
+    }
+    .course2Image{
+        height: 190px;
+    }
+}
+@media (min-width:651px ) and (max-width: 800px){
+    #price {
+        padding: 5% 25%;
+    }
+    .course1Image{
+        height: 190px;
+    }
+    .course2Image{
+        height: 190px;
+    }
+}
+
+@media (min-width:801px ) and (max-width: 1000px){
+    #price {
+        padding: 5% 30%;
+    }
+    .courseContainer{
+        height: 550px;
+    }
+    .course1Image{
+        height: 240px;
+    }
+    .course2Image{
+        height: 240px;
+    }
+}
+@media (min-width:1001px ) and (max-width: 1100px){
+    #price {
+        padding: 5% 35%;
+    }
+    .courseContainer{
+        height: 550px;
+    }
+    .course1Image{
+        height: 240px;
+    }
+    .course2Image{
+        height: 240px;
+    }
+}
+@media (min-width:1401px ) and (max-width: 1600px){
+    #price {
+        padding: 5% 10%;
+    }
+    .courseContainer{
+        height: 600px;
+    }
+    .course1Image{
+        height: 250px;
+    }
+    .course2Image{
+        height: 250px;
+    }
+    .discountDescription{
+        font-size: 1.6rem;
+    }
+    .priseDescription{
+        font-size: 1.8rem;
+    }
+    .priceButton{
+        font-size: 1.8rem;
+    }
+    .courseName{
+        font-size: 2.3rem;
+    }
+}
+@media (min-width:1601px ) and (max-width: 1920px){
+    #price {
+        padding: 5% 10%;
+    }
+    .courseContainer{
+        height: 700px;
+    }
+    .course1Image{
+        height: 300px;
+    }
+    .course2Image{
+        height: 300px;
+    }
+    .discountDescription{
+        font-size: 1.9rem;
+    }
+    .priseDescription{
+        font-size: 2rem;
+    }
+    .priceButton{
+        font-size: 2rem;
+    }
+    .courseName{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1101px){
+    .priceBlock{
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0 0 0;
+    }
+    .courseContainer{
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .discountDescription{
+        font-size: 1.3rem;
+    }
+    .priseDescription{
+        font-size: 1.6rem;
+    }
+    .discountText{
+        font-size: 1.3rem;
+    }
+
+    .courseName{
+        font-size: 1.8rem;
+    }
+}

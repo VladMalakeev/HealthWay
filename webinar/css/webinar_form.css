@@ -1,0 +1,221 @@
+.bigFormWrap{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bigFormBody{
+    display: flex;
+    flex-direction: column;
+    background: rgba(195, 228, 243, 0.75);
+    box-shadow: 4px 4px 13px 0px #00000061;
+    border-radius: 20px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.bigFormInput{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #00000066;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.bigFormInput:hover{
+    border: 1px solid #9ed6fa;
+}
+
+.bigFormInput:focus{
+    outline: none;
+}
+
+.error{
+    padding: 5px;
+    width: 100%;
+    background: #f8e6eb;
+    color: red;
+    text-align: center;
+    display: none;
+    font-size: 1.7rem;
+    border-radius: 5px;
+}
+
+.errorWrap{
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.bigFormButton{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid #0000005e;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    background: rgb(249, 89, 88);
+    color: white;
+    transition: 500ms;
+}
+.bigFormButton:focus{
+    outline: none;
+}
+
+.bigFormButton:hover{
+    background: rgb(249, 7, 9);
+}
+
+
+@media(min-width: 1700px){
+    .bigFormWrap {
+        height: 700px;
+    }
+    .bigFormInput{
+        font-size: 3rem;
+    }
+    .bigFormButton{
+        font-size: 3rem;
+    }
+    .errorWrap{
+        height: 70px;
+    }
+    .error{
+        font-size: 2.4rem;
+    }
+}
+
+@media(min-width: 1500px) and (max-width: 1699px){
+    .bigFormWrap {
+        height: 700px;
+    }
+    .bigFormInput{
+        font-size: 3rem;
+    }
+    .bigFormButton{
+        font-size: 3rem;
+    }
+    .errorWrap{
+        height: 60px;
+    }
+    .error{
+        font-size: 2.4rem;
+    }
+}
+
+@media(min-width: 1350px) and (max-width: 1499px){
+    .bigFormWrap {
+        height: 700px;
+    }
+    .bigFormInput{
+        font-size: 2.6rem;
+    }
+    .bigFormButton{
+        font-size: 2.6rem;
+    }
+    .errorWrap{
+        height: 50px;
+    }
+    .error{
+        font-size: 2.4rem;
+    }
+}
+
+@media(min-width: 800px) and (max-width: 1020px){
+    .bigFormWrap {
+        height: 600px;
+    }
+    .bigFormBody{
+        width: 50%;
+    }
+    .errorWrap{
+        height: 40px;
+    }
+    .error{
+        font-size: 1.8rem;
+    }
+}
+
+@media(min-width: 650px) and (max-width: 799px){
+    .bigFormWrap {
+        height: 600px;
+    }
+    .bigFormBody{
+        width: 60%;
+    }
+    .errorWrap{
+        height: 40px;
+    }
+    .error{
+        font-size: 1.8rem;
+    }
+}
+
+@media(min-width: 500px) and (max-width: 649px){
+    .bigFormWrap {
+        height: 600px;
+    }
+    .bigFormBody{
+        width: 70%;
+    }
+    .errorWrap{
+        height: 40px;
+    }
+    .error{
+        font-size: 1.8rem;
+    }
+}
+
+@media(min-width: 350px) and (max-width: 499px){
+    .bigFormWrap {
+        height: 600px;
+    }
+    .bigFormBody{
+        width: 80%;
+        padding: 20px;
+    }
+    .errorWrap{
+        height: 40px;
+    }
+    .error{
+        font-size: 1.4rem;
+    }
+    .bigFormInput{
+        font-size: 1.6rem;
+    }
+    .bigFormButton{
+        font-size:  1.6rem;
+    }
+}
+
+@media(min-width: 0px) and (max-width: 349px){
+    .bigFormWrap {
+        height: 600px;
+    }
+    .bigFormBody{
+        width: 90%;
+        padding: 15px;
+    }
+    .errorWrap{
+        height: 30px;
+    }
+    .error{
+        font-size: 1.2rem;
+    }
+    .bigFormInput{
+        font-size: 1.6rem;
+    }
+    .bigFormButton{
+        font-size:  1.6rem;
+    }
+}

@@ -1,0 +1,50 @@
+body{
+    overflow-x: hidden;
+}
+
+.headerWrap{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.header {
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: 'Marmelad', sans-serif;
+    color: #545454;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    z-index: 5;
+}
+
+.headerWrap p:before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #8e8e8e;
+    z-index: -2;
+}
+.headerWrap span {
+    background: white;
+    padding: 0 20px;
+    z-index: -1;
+}
+
+@media(min-width: 320px) and (max-width: 600px) {
+    .header {
+        font-size: 1.8rem;
+        margin: 20px 0;
+    }
+    .headerWrap span {
+        padding: 0;
+    }
+
+    .headerWrap p:before {
+        bottom: 0;
+        top: auto;
+    }
+}

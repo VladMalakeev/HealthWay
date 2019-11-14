@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /nutrition-paid/
+Disallow: /nutrition-unpaid/
+Disallow: /cleansing-paid/
+Disallow: /cleansing-unpaid/

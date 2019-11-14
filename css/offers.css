@@ -1,0 +1,114 @@
+#offer{
+    padding: 0 10%;
+    background: white;
+    box-shadow: 0px -1px 9px 0px #00000061;
+}
+
+.offerBlockReverse{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+.offerBlock{
+    background: white;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px 15px;
+    align-items: center;
+}
+
+.offerTextWrap{
+     width: 60%;
+     padding-left: 15%;
+ }
+
+.offerImageWrap{
+    width: 40%;
+}
+
+.offerTextWrapReverse{
+    width: 60%;
+    padding-right: 15%;
+}
+
+.offerImageWrapReverse{
+    width: 40%;
+}
+
+
+.offerHeader{
+    font-size: 1.8rem;
+    text-align: right;
+    font-family: 'Marmelad', sans-serif;
+    color: #616161;
+ }
+
+.offerDescription{
+    font-size: 1.3rem;
+    text-align: right;
+    font-family: 'Marmelad', sans-serif;
+}
+
+.offerHeaderReverse{
+    font-size: 1.8rem;
+    text-align: left;
+    font-family: 'Marmelad', sans-serif;
+    color: #616161;
+}
+
+.offerDescriptionReverse{
+    font-size: 1.3rem;
+    text-align: left;
+    font-family: 'Marmelad', sans-serif;
+}
+
+.offerImage{
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 320px) and (max-width: 800px){
+    #offer{
+        padding: 0 3%;
+    }
+    .offerBlockReverse{
+        flex-direction: column;
+    }
+    .offerBlock{
+        flex-direction: column;
+    }
+    .offerTextWrap{
+        width: 100%;
+        padding-left: 0;
+    }
+    .offerTextWrapReverse{
+        width: 100%;
+        padding-right: 0;
+    }
+    .offerImageWrap{
+        width: 70%;
+    }
+    .offerImageWrapReverse{
+        width: 70%;
+    }
+    .offerHeaderReverse{
+         font-size: 1.6rem;
+         text-align: center;
+     }
+    .offerHeader{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .offerDescriptionReverse{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .offerDescription{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+}
